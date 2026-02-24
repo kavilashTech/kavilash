@@ -90,16 +90,9 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="images/millet-food-products.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Millet Food Products</h5>
-                        <p>Value added Millet Food products, Gluten Free, Vegan, Ready to Eat, Ready to Cook and B2B ingredients.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/bio-fertilizer.jpg" class="card-img-top">
+                    <a href="biofertilizers.php">
+                        <img src="images/bio-fertilizer.jpg" class="card-img-top">
+                    </a>
                     <div class="card-body">
                         <h5>Bio Fertilizer & Compost</h5>
                         <p>Cow Dung Powder, Compost and other Bio Fertilizers. For Bio-gas plants, Farms, Landscaping and Nurseries.</p>
@@ -108,15 +101,28 @@
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
+                    <a href="millet-products.php">
+                        <img src="images/millet-food-products.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5>Millet Food Products</h5>
+                        <p>Value added Millet Food products, Gluten Free, Vegan, Ready to Eat, Ready to Cook and B2B ingredients.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="col-md-4">
+                <div class="card h-100">
                     <img src="images/spices.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5>Spices and Herbs</h5>
                         <p>Authentic Indian Spices & Herbs. Whole, Dried, Ground, Powdered. B2B Supply.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="card h-100">
                     <img src="images/capsicum_1.jpg" class="card-img-top">
                     <div class="card-body">
@@ -124,7 +130,8 @@
                         <p>Dried Veggies, Fruits, Vegetable Powder, Fruit Powder. Dehydrated through Hot Air, Freeze Drying and IQF</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
             <div class="col-md-4">
                 <div class="card h-100">
                     <img src="images/leather.jpg" class="card-img-top">
@@ -134,6 +141,17 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/hair_products.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Hair & Hair Products</h5>
+                        <p>The best quality Remy Human Hair. Bulk Hair, Wefted, Patches, and many more.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
