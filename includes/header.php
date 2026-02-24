@@ -58,7 +58,7 @@
 
 
 
-    <a href="https://wa.me/917708960727?text=Hello%20Kavilash%20Enterprises,%20I%20am%20interested%20in%20your%20export%20products."
+    <a href="https://wa.me/917708960727?text=Hello%20Kavilash%20Enterprises,%20I%20am%20interested%20in%20your%20products."
         class="whatsapp-float" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
     </a>
