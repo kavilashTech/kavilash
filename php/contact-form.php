@@ -1,0 +1,1 @@
+<?php if($_POST){mail('info@kavilashenterprises.com','New Export Enquiry',$_POST['message']);header('Location: ../contact.php');} ?>
