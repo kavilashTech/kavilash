@@ -48,7 +48,7 @@
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                             <li><a class="dropdown-item" href="biofertilizers.php">Bio-Fertilizer & Compost</a></li>
                             <li><a class="dropdown-item" href="millet-products.php">Millet Food Products</a></li>
-                            <li><a class="dropdown-item" href="">Spices & Herbs</a></li>
+                            <li><a class="dropdown-item" href="">Leather & Leather Products</a></li>
                             <li><a class="dropdown-item" href="">Hair & Hair Products</a></li>
                         </ul>
                     </li>
