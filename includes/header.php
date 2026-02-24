@@ -14,6 +14,9 @@
     <meta property="og:description" content="Exporting millet foods, plant-based products, cow dung-based eco products, and premium Indian Remy hair to global markets.">
     <meta property="og:type" content="website">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/kfavicon.png">
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
@@ -30,7 +33,7 @@
 
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.php">KAVILASH ENTERPRISES</a>
+            <a class="navbar-brand" href="index.php"><img src="images/fav-icon/kfavicon.png" width="30px">&nbsp;KAVILASH ENTERPRISES</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="nav">
