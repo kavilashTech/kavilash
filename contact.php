@@ -51,6 +51,7 @@ if (isset($_POST['btnSubmit'])) {
         exit;
     }
     echo '<script>document.getElementById("message").innerHTML = "Information Submitted!";</script>';
+    $emailSuccess = "Information Submitted!";
 
     //clear all mail receipients and Attachments
     $phpemail->clearAddresses();
