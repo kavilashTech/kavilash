@@ -10,9 +10,10 @@ $emailSuccess = "";
 
 if (isset($_POST['btnSubmit'])) {
 
-    $anhName = $_REQUEST['anhName'];
-    $anhEmail = $_REQUEST['anhEmail'];
-    $anhMessage = $_REQUEST['anhMessage'];
+    $custName = $_REQUEST['txtName'];
+    $custPhone = $_REQUEST['txtPhone'];
+    $custEmail = $_REQUEST['txtEmail'];
+    $custMessage = $_REQUEST['txtMessage'];
 
     $emailSuccess = "1";
 
@@ -20,9 +21,10 @@ if (isset($_POST['btnSubmit'])) {
     $variables = array();
 
     $variables['imgpath'] = SITE_URL;
-    $variables['anhName'] = $anhName;
-    $variables['anhEmail'] = $anhEmail;
-    $variables['anhMessage'] = $anhMessage;
+    $variables['kavName'] = $custName;
+    $variables['kavPhone'] = $custPhone;
+    $variables['kavEmail'] = $custEmail;
+    $variables['kavMessage'] = $custMessage;
 
     $template = file_get_contents("includes/feedbackTemplate.html");
 
@@ -263,25 +265,25 @@ if (isset($_POST['btnSubmit'])) {
 
                 <div class="form-group">
                     <label>Full Name *</label>
-                    <input type="text" name="name" required>
+                    <input type="text" name="txtName" id="txtName" required>
                 </div>
 
                 <div class="form-group">
                     <label>Mobile Number *</label>
-                    <input type="tel" name="mobile" required>
+                    <input type="tel" name="txtPhone" id="txtPhone" required>
                 </div>
 
                 <div class="form-group">
                     <label>Email ID *</label>
-                    <input type="email" name="email" required>
+                    <input type="email" name="txtEmail" id="txtEmail" required>
                 </div>
 
                 <div class="form-group">
                     <label>Description</label>
-                    <textarea name="message"></textarea>
+                    <textarea required="true" name="txtMessage" id="txtMessage" placeholder="Type your message..."></textarea>
                 </div>
 
-                <button type="submit">Submit Enquiry</button>
+                <input type="submit" value="Send" name="btnSubmit">
 
             </form>
         </div>

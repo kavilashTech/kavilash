@@ -6,7 +6,7 @@ ini_set("mail.add_x_header", TRUE);
 
  ini_set('mail.add_x_header','On'); 
 
- ini_set('sendmail_from','contact@anhexim.com'); 
+ ini_set('sendmail_from','contact@kavilash.com'); 
  
 //  ini_set('SMTP','smtp.gmail.com'); 
  ini_set('SMTP','mail.kavilash.com'); 
