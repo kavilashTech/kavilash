@@ -34,6 +34,8 @@ if (isset($_POST['btnSubmit'])) {
 
     $email_body = $template;
 
+try {
+
     //admin email
     $phpemail->AddAddress(ADMIN_EMAIL);
 
@@ -52,6 +54,10 @@ if (isset($_POST['btnSubmit'])) {
     }
     echo '<script>document.getElementById("message").innerHTML = "Information Submitted!";</script>';
     $emailSuccess = "Information Submitted!";
+} catch (Exception $e){
+    echo " Error in Try Catch ";
+    exit(0);
+}
 
     //clear all mail receipients and Attachments
     $phpemail->clearAddresses();
