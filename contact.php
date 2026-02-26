@@ -93,9 +93,7 @@ if (isset($_POST['btnSubmit'])) {
     // $phpemail->clearAttachments();
 }
 
-?>
 
-<?php
 
 // use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\Exception;
@@ -150,8 +148,6 @@ if (isset($_POST['btnSubmit'])) {
 // }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
