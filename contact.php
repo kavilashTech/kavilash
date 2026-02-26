@@ -72,7 +72,7 @@ if (isset($_POST['btnSubmit'])) {
     // TO USE HTML TEMPLATE USE THE FOLLOWING VARIABLE
     // $email_body = $template;
     // $email_body = "This is generated email from phpmailer.";
-    $email_body = $custMessage;
+    $email_body = $custName . ' : ' . $custPhone . ' : ' . $custEmail . ' : ' . $custMessage;
 
     try {
         //Server Settings
