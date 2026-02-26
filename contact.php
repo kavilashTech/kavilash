@@ -2,123 +2,152 @@
 
 <?php
 
-// require('includes/connection.php');
+require('includes/connection.php');
 // require('emailheaders.php');
 
-// $emailSuccess = "";
-//     $error = "";
+// Import PHPMailer classes into the global namespace 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-// if (isset($_POST['btnSubmit'])) {
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-//     $custName = $_REQUEST['txtName'];
-//     $custPhone = $_REQUEST['txtPhone'];
-//     $custEmail = $_REQUEST['txtEmail'];
-//     $custMessage = $_REQUEST['txtMessage'];
+$emailSuccess = "";
+$error = "";
 
-//     $emailSuccess = "1";
+$phpemail = new PHPMailer(true);
 
+if (isset($_POST['btnSubmit'])) {
 
-//     $variables = array();
+    $custName = $_REQUEST['txtName'];
+    $custPhone = $_REQUEST['txtPhone'];
+    $custEmail = $_REQUEST['txtEmail'];
+    $custMessage = $_REQUEST['txtMessage'];
 
-//     $variables['imgpath'] = SITE_URL;
-//     $variables['kavName'] = $custName;
-//     $variables['kavPhone'] = $custPhone;
-//     $variables['kavEmail'] = $custEmail;
-//     $variables['kavMessage'] = $custMessage;
+    // $emailSuccess = "1";
 
-//     $template = file_get_contents("includes/feedbackTemplate.html");
+    // $variables = array();
 
-//     foreach ($variables as $key => $value) {
-//         $template = str_replace('{{ ' . $key . ' }}', $value, $template);
-//     }
+    // $variables['imgpath'] = SITE_URL;
+    // $variables['kavName'] = $custName;
+    // $variables['kavPhone'] = $custPhone;
+    // $variables['kavEmail'] = $custEmail;
+    // $variables['kavMessage'] = $custMessage;
 
-//     $email_body = $template;
+    // $template = file_get_contents("includes/feedbackTemplate.html");
 
-// try {
+    // foreach ($variables as $key => $value) {
+    //     $template = str_replace('{{ ' . $key . ' }}', $value, $template);
+    // }
 
-//     //admin email
-//     $phpemail->AddAddress(ADMIN_EMAIL);
+    // $email_body = $template;
+    $email_body = "This is generated email from phpmailer.";
 
-//     $phpemail->From = ADMIN_EMAIL;
-//     $phpemail->Subject = "New Query from Website";
-//     $phpemail->MsgHTML($email_body);
-//     // $phpemail->addBCC('kavilashtech@gmail.com');
+    try {
+        //Server Settings
+        $phpemail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $phpemail->isSMTP();
+        $phpemail->Host = 'smtp.kavilash.com';
+        $phpemail->SMTPAuth = true;
+        $phpemail->Username = 'contact@kavilash.com';
+        $phpemail->Password = 'Target@1cr';
+        $phpemail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $phpemail->Port = 587;
 
+        //Content
+        $phpemail->setFrom('contact@kavilash.com', 'Sampath');
+        $phpemail->addAddress('sampathraj.mp@gmail.com', 'Sampath Kagrotech');
+        $phpemail->addReplyTo('contact@kavilash.com', 'Information Kagrotech');
 
-//     if (!$phpemail->Send()) {
-//         echo '<p style="color:red"></p>';
-//         echo '<script>document.getElementById("error").innerHTML = "Error sending email. Contact Administrator";</script>';
-//         $emailSuccess = "";
-//         $error = "Message could not be sent. Mailer Error: {$phpemail->ErrorInfo}";
-//         exit;
-//     }
-//     echo '<script>document.getElementById("message").innerHTML = "Information Submitted!";</script>';
-//     $emailSuccess = "Information Submitted!";
-// } catch (Exception $e){
-//     echo " Error in Try Catch ";
-//     exit(0);
-// }
+        //admin email
+        // $phpemail->AddAddress(ADMIN_EMAIL);
 
-//     //clear all mail receipients and Attachments
-//     $phpemail->clearAddresses();
-//     $phpemail->clearAttachments();
-// }
+        // $phpemail->From = ADMIN_EMAIL;
+        $phpemail->isHTML(true);
+        $phpemail->Subject = "New Query from Website";
+        $phpemail->Body = 'Thisis the HTML MEssage usign PHPMailer';
+        $phpemail->AltBody = 'Alternate body text for non Html';
+        // $phpemail->MsgHTML($email_body);
+        // $phpemail->addBCC('kavilashtech@gmail.com');
+
+        $phpemail->send();
+        echo "message sent";
+
+        // if (!$phpemail->Send()) {
+        //     echo '<p style="color:red"></p>';
+        //     echo '<script>document.getElementById("error").innerHTML = "Error sending email. Contact Administrator";</script>';
+        //     $emailSuccess = "";
+        //     $error = "Message could not be sent. Mailer Error: {$phpemail->ErrorInfo}";
+        //     exit;
+        // }
+        // echo '<script>document.getElementById("message").innerHTML = "Information Submitted!";</script>';
+        // $emailSuccess = "Information Submitted!";
+    } catch (Exception $e) {
+        echo " Error in Try Catch - Mailer Error : {$phpemail->ErrorInfo} ";
+    }
+
+    //clear all mail receipients and Attachments
+    // $phpemail->clearAddresses();
+    // $phpemail->clearAttachments();
+}
 
 ?>
 
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-// require "vendor/autoload.php";
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
+// // require "vendor/autoload.php";
 
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
-$mail = new PHPMailer(TRUE);
+// require 'PHPMailer/Exception.php';
+// require 'PHPMailer/PHPMailer.php';
+// require 'PHPMailer/SMTP.php';
+// $mail = new PHPMailer(TRUE);
 
-$emailSuccess = "";
-$error="";
+// $emailSuccess = "";
+// $error="";
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    // $name = $_POST['name'];
-    // $email = $_POST['email'];
-    // $message = $_POST['message'];
+// if ($_SERVER['REQUEST_METHOD'] == "POST") {
+//     // $name = $_POST['name'];
+//     // $email = $_POST['email'];
+//     // $message = $_POST['message'];
 
-    $custName = $_REQUEST['txtName'];
-    // $custPhone = $_REQUEST['txtPhone'];
-    $custEmail = $_REQUEST['txtEmail'];
-    $custMessage = $_REQUEST['txtMessage'];
+//     $custName = $_REQUEST['txtName'];
+//     // $custPhone = $_REQUEST['txtPhone'];
+//     $custEmail = $_REQUEST['txtEmail'];
+//     $custMessage = $_REQUEST['txtMessage'];
 
-    $mail = new PHPMailer(true);
+//     $mail = new PHPMailer(true);
 
-    try {
-        $mail->isSMTP();
-        $mail->Host = "smtp.kagrotech.com";
-        $mail->SMTPAuth = true;
-        $mail->Username = "sampath@kagrotech.com";
-        $mail->Password = "AyyayoPoda@2";
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 465;
+//     try {
+//         $mail->isSMTP();
+//         $mail->Host = "smtp.kagrotech.com";
+//         $mail->SMTPAuth = true;
+//         $mail->Username = "sampath@kagrotech.com";
+//         $mail->Password = "AyyayoPoda@2";
+//         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+//         $mail->Port = 465;
 
-        $mail->setFrom("contact@Kagrotech.com", "Kagrotech");
-        $mail -> addAddress("sampathraj.mp@gmail.com", "Zaman");
+//         $mail->setFrom("contact@Kagrotech.com", "Kagrotech");
+//         $mail -> addAddress("sampathraj.mp@gmail.com", "Zaman");
 
-        $mail->Subject = "New Contact Form Submission";
-        $mail->Body = "Name: $custName\n" .
-            "Email: $custEmail\n" .
-            "Message: $custMessage";
-        if ($mail->send()) {
-            echo "Message sent successfully";
-            $emailSuccess = "Email sent";
-        } else {
-            echo "Message could not be sent, Error: " . $mail->ErrorInfo;
-            $error = "Error. Mail not sent";
-        }
-    } catch (Exception $e) {
-        echo "Message could not be sent, Error: " . $mail->ErrorInfo;
-    }
-}
+//         $mail->Subject = "New Contact Form Submission";
+//         $mail->Body = "Name: $custName\n" .
+//             "Email: $custEmail\n" .
+//             "Message: $custMessage";
+//         if ($mail->send()) {
+//             echo "Message sent successfully";
+//             $emailSuccess = "Email sent";
+//         } else {
+//             echo "Message could not be sent, Error: " . $mail->ErrorInfo;
+//             $error = "Error. Mail not sent";
+//         }
+//     } catch (Exception $e) {
+//         echo "Message could not be sent, Error: " . $mail->ErrorInfo;
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
