@@ -1,5 +1,29 @@
 <?php include 'includes/header.php'; ?>
 
+
+<script type="text/javascript">
+    function testFunction() {
+        //alert("test");
+        var answer = document.getElementById("testQuestionA").value;
+        if (answer == 20) {
+            // alert('true');
+            document.getElementById("success").innerHTML = 'Form Submitted. Thank you!';
+            setTimeout(() => {
+                ''
+            }, 3000);
+            return true;
+            //document.getElementById("formsignup").submit();
+        } else {
+            // alert('false');
+            document.getElementById("error").innerHTML = 'Incorrect Information';
+            event.preventDefault();
+            return false;
+        }
+    }
+</script>
+
+
+
 <?php
 // echo "test";
 require('includes/connection.php');
@@ -63,7 +87,7 @@ if (isset($_POST['btnSubmit'])) {
         $phpemail->Port = 587;  //TCP port to connect to; use 587 for "tls"
 
         //Content
-        $phpemail->setFrom('contact@kavilash.com', 'Sampath');  //Sender Name (admin email)
+        $phpemail->setFrom('contact@kavilash.com', 'Kavilash Website');  //Sender Name (admin email)
         $phpemail->addAddress('sampathraj.mp@gmail.com', 'Sampath Kagrotech'); // Add a recipient
         $phpemail->addReplyTo('contact@kavilash.com', 'Information Kagrotech');  // reply to Address
         // $mail->addCC('cc@example.com');
@@ -83,9 +107,10 @@ if (isset($_POST['btnSubmit'])) {
             $emailSuccess = "";
             $error = "Message could not be sent. Mailer Error: {$phpemail->ErrorInfo}";
             exit;
+        } else {
+            // echo '<script>document.getElementById("message").innerHTML = "Information Submitted!";</script>';
+            $emailSuccess = "Information Submitted!";
         }
-        echo '<script>document.getElementById("message").innerHTML = "Information Submitted!";</script>';
-        $emailSuccess = "Information Submitted!";
     } catch (Exception $e) {
         echo " Error in Try Catch - Mailer Error : {$phpemail->ErrorInfo} ";
     }
@@ -96,9 +121,6 @@ if (isset($_POST['btnSubmit'])) {
 }
 
 ?>
-
-
-
 
 <style>
     * {
@@ -130,7 +152,7 @@ if (isset($_POST['btnSubmit'])) {
         flex: 1 1 400px;
         background: linear-gradient(135deg, rgb(7, 62, 94), rgb(46, 119, 161));
         color: #fff;
-        padding: 50px 40px;
+        padding: 30px 40px;
     }
 
     .contact-info h2 {
@@ -152,7 +174,7 @@ if (isset($_POST['btnSubmit'])) {
     /* Right Column */
     .contact-form {
         flex: 1 1 500px;
-        padding: 50px 40px;
+        padding: 33px 40px;
     }
 
     .contact-form h2 {
@@ -162,7 +184,7 @@ if (isset($_POST['btnSubmit'])) {
     }
 
     .form-group {
-        margin-bottom: 18px;
+        margin-bottom: 13px;
     }
 
     label {
@@ -234,6 +256,22 @@ if (isset($_POST['btnSubmit'])) {
         font-size: 14px;
     }
 
+    .captcha-block {
+        display: flex;
+        /* Makes children (label and input) a flex container */
+        align-items: center;
+        /* Vertically centers them */
+        margin-bottom: 10px;
+        /* Adds space between rows */
+        gap: 10px;
+        /* Adds space between the label and input */
+
+    }
+
+    .captcha-block input{
+        width:200px;
+    }
+
     /* Tablet */
     @media (max-width: 992px) {
         .contact-wrapper {
@@ -273,7 +311,7 @@ if (isset($_POST['btnSubmit'])) {
     }
 </style>
 
-<div class="contact-wrapper my-5">
+<div class="contact-wrapper my-4">
 
     <!-- Left -->
     <div class="contact-info">
@@ -289,7 +327,7 @@ if (isset($_POST['btnSubmit'])) {
         <div class="contact-details">
             <div style="padding-left: 25px;text-indent:-28px;"><strong>📍 Address:</strong>15 B/2, Bhaskar Street, Nehru Nagar,<br>Saligramam, Chennai 600093. India</div>
             <div><strong>📞 Phone:</strong> +91 7708960727</div>
-            <div><strong>📧 Email:</strong> info@kavilashenterprises.com</div>
+            <div><strong>📧 Email:</strong> contact@kavilash.com</div>
         </div>
     </div>
 
@@ -297,15 +335,12 @@ if (isset($_POST['btnSubmit'])) {
     <div class="contact-form">
         <h2>Connect with us. Let's discuss !</h2>
 
-        <?php if ($emailSuccess): ?>
-            <div class="success"><?php echo $emailSuccess; ?></div>
-        <?php endif; ?>
 
-        <?php if ($error): ?>
-            <div class="error"><?php echo $error; ?></div>
-        <?php endif; ?>
 
-        <form id="contactForm" method="POST">
+        <div id="success" style="color:green;text-align:center; font-size:24px;"></div> <br>
+        <div id="error" style="color:red;text-align:center;font-size:24px;"></div>
+
+        <form id="contactForm" method="POST" onsubmit="return testFunction();">
 
             <div class="form-group">
                 <label>Full Name *</label>
@@ -324,7 +359,15 @@ if (isset($_POST['btnSubmit'])) {
 
             <div class="form-group">
                 <label>Description</label>
-                <textarea required="true" name="txtMessage" id="txtMessage" placeholder="Type your message..."></textarea>
+                <textarea required="true" name="txtMessage" id="txtMessage" placeholder="Type your message..." required></textarea>
+            </div>
+            <div class="form-group captcha-block">
+                <label>12 + 8 =</label>
+                <input id="testQuestionA" name="testQuestionA" type="number" minlength="2" maxlength="20" placeholder="Enter Answer" required>
+                <label id="helptestquestion" style="font-size:12px">Let us know you are not a ROBOT!</label>
+                <!-- <label class="control-label" for="testQuestion">12 + 8 =</label>
+                <input id="testQuestionA" name="testQuestionA" type="number" minlength="2" maxlength="20" class="form-control" placeholder="Enter Answer" required>
+                <label id="helptestquestion" style="font-size:12px">Let us know you are not a ROBOT!</label> -->
             </div>
 
             <input id="btnSubmit" type="submit" value="Send" name="btnSubmit">
