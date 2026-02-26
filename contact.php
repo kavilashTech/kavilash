@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <?php
-echo "test";
+// echo "test";
 require('includes/connection.php');
 // require('emailheaders.php');
 
@@ -149,10 +149,7 @@ if (isset($_POST['btnSubmit'])) {
 ?>
 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Kavilash Enterprises</title>
+
 
     <style>
         * {
