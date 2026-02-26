@@ -1,6 +1,11 @@
 <?php include 'includes/header.php'; ?>
 
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
+
+<?php
 // echo "test";
 require('includes/connection.php');
 // require('emailheaders.php');
