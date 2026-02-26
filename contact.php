@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $mail->Username = "sampath@kagrotech.com";
         $mail->Password = "AyyayoPoda@2";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Port = 465;
 
         $mail->setFrom("contact@Kagrotech.com", "Kagrotech");
         $mail -> addAddress("sampathraj.mp@gmail.com", "Zaman");
