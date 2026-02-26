@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 <?php
-
+echo "test";
 require('includes/connection.php');
 // require('emailheaders.php');
 
