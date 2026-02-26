@@ -54,7 +54,7 @@ if (isset($_POST['btnSubmit'])) {
         //Server Settings
         $phpemail->SMTPDebug = SMTP::DEBUG_SERVER;
         $phpemail->isSMTP();
-        $phpemail->Host = 'smtp.kavilash.com';
+        $phpemail->Host = 'mail.kavilash.com';
         $phpemail->SMTPAuth = true;
         $phpemail->Username = 'contact@kavilash.com';
         $phpemail->Password = 'Target@1cr';
