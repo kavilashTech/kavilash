@@ -160,10 +160,10 @@
     <div class="container">
         <h3 class="section-title text-center">Gallery</h3>
         <div class="row g-3">
-            <div class="col-6 col-md-3"><img src="images/capsicum_1.jpg" class="img-fluid"></div>
-            <div class="col-6 col-md-3"><img src="images/capsicum_1.jpg" class="img-fluid"></div>
-            <div class="col-6 col-md-3"><img src="images/capsicum_1.jpg" class="img-fluid"></div>
-            <div class="col-6 col-md-3"><img src="images/capsicum_1.jpg" class="img-fluid"></div>
+            <div class="col-6 col-md-3"><img src="images/gallery/gallery1.jpg" class="img-fluid"></div>
+            <div class="col-6 col-md-3"><img src="images/gallery/gallery2.jpg" class="img-fluid"></div>
+            <div class="col-6 col-md-3"><img src="images/gallery/gallery3.jpg" class="img-fluid"></div>
+            <div class="col-6 col-md-3"><img src="images/gallery/gallery4.jpg" class="img-fluid"></div>
         </div>
     </div>
 </section>
