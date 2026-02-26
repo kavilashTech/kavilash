@@ -89,8 +89,8 @@ if (isset($_POST['btnSubmit'])) {
     }
 
     //clear all mail receipients and Attachments
-    // $phpemail->clearAddresses();
-    // $phpemail->clearAttachments();
+    $phpemail->clearAddresses();
+    $phpemail->clearAttachments();
 }
 
 
