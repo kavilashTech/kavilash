@@ -47,7 +47,7 @@ if (isset($_POST['btnSubmit'])) {
 
     try {
         //Server Settings
-        $phpemail->SMTPDebug = SMTP::DEBUG_SERVER;
+        // $phpemail->SMTPDebug = SMTP::DEBUG_SERVER;
         $phpemail->isSMTP();
         $phpemail->Host = 'mail.kavilash.com';
         $phpemail->SMTPAuth = true;
@@ -67,7 +67,7 @@ if (isset($_POST['btnSubmit'])) {
         // $phpemail->From = ADMIN_EMAIL;
         $phpemail->isHTML(true);
         $phpemail->Subject = "New Query from Website";
-        $phpemail->Body = 'Thisis the HTML MEssage usign PHPMailer';
+        $phpemail->Body = $email_body;
         $phpemail->AltBody = 'Alternate body text for non Html';
         // $phpemail->MsgHTML($email_body);
         // $phpemail->addBCC('kavilashtech@gmail.com');
