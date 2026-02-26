@@ -26,7 +26,7 @@
 
     <div class="top-bar py-2">
         <div class="container d-flex justify-content-between">
-            <div>📞 +91 7708960727 | ✉️ info@kavilashenterprises.com</div>
+            <div>📞 +91 7708960727 | ✉️ contact@kavilash.com</div>
             <div>Global Exports from India</div>
         </div>
     </div>
