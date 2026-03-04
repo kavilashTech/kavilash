@@ -145,7 +145,7 @@
                 <p>premium-quality Cow Dung Powder processed through controlled drying and screening methods to ensure consistency, reduced moisture content, and safe handling for global markets.</p>
 
                 <P>Widely used as an organic fertilizer, soil conditioner, compost enhancer, and as a base material for bio-fertilizers, our cow dung powder improves soil structure, enhances microbial activity, and increases nutrient availability naturally.</p>
-                <a href="#" class="btn">Enquire Now</a>
+                <a href="contact.php" class="btn">Enquire Now</a>
             </div>
         </div>
     </section>
@@ -160,7 +160,7 @@
                 <h2>Vermicompost</h2>
                 <p>Cow dung vermicompost is a premium, nutrient-rich organic fertilizer produced by earthworms breaking down cow dung, serving as an excellent soil conditioner. It is superior to raw manure, offering high NPK levels, micronutrients (Zinc, Copper), and beneficial microbes. It improves soil aeration, water retention, and is ideal for potted plants, gardens, and organic farming.</p>
                 <p>Improves soil structure, increases nutrient absorption, promotes healthy plant growth and provides nutrients in a form that is easier for plants to absorb.</p>
-                <a href="#" class="btn">Enquire Now</a>
+                <a href="contact.php" class="btn">Enquire Now</a>
             </div>
         </div>
     </section>
@@ -176,7 +176,7 @@
                 <p>Cow dung briquettes are sustainable, eco-friendly, and cost-effective fuel sources made from compressed dried cattle manure, often mixed with agricultural waste like sawdust or rice husks. They serve as a clean-burning alternative to wood and coal for cooking, heating, and industrial boilers, providing high calorific value with low ash content.
                     Eco-friendly compressed briquettes made from processed cow dung, ideal for agricultural and energy applications.</p>
                 <p>Low moisture content, easy handling, and sustainable fuel alternative reducing dependency on wood and coal.</p>
-                <a href="#" class="btn">Enquire Now</a>
+                <a href="contact.php" class="btn">Enquire Now</a>
             </div>
         </div>
     </section>
@@ -192,7 +192,7 @@
                 <p>High-quality Organic Compost from India, processed under strict quality controls to meet international agricultural standards. Our compost is manufactured through scientific decomposition methods to ensure pathogen reduction, stable nutrient composition, and optimal organic carbon levels.
                     Premium organic compost formulated to improve soil fertility and long-term crop productivity.</p>
                 <p>Designed for large-scale farming, organic cultivation, landscaping projects, and soil regeneration programs, our compost enhances soil structure, improves microbial activity, and increases water retention capacity.</p>
-                <a href="#" class="btn">Enquire Now</a>
+                <a href="contact.php" class="btn">Enquire Now</a>
             </div>
         </div>
     </section>
