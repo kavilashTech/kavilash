@@ -21,6 +21,15 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W969H3GWV7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W969H3GWV7');
+</script>
 
 <body>
 
