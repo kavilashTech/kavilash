@@ -167,6 +167,19 @@
         </div>
     </div>
 </section>
+<section class="py-5 bg-light">
+    <div class="container">
+        <h3 class="section-title text-center">Our Certifications</h3>
+        <div class="row g-3">
+            <div class="col-6 col-md-3"><a href="images/certificates/apeda.jpg" target="_blank"><img src="images/certificates/apeda.jpg" class="img-fluid"></a><p style="text-align: center; font-weight:bold;";>APEDA</p></div>
+            <div class="col-6 col-md-3"><a href="images/certificates/fieo.jpg" target="_blank"><img src="images/certificates/fieo.jpg" class="img-fluid"></a><p style="text-align: center; font-weight:bold;";>FIEO</p></div>
+            <div class="col-6 col-md-3"><a href="images/certificates/fssai.jpg" target="_blank"><img src="images/certificates/fssai.jpg" class="img-fluid"></a><p style="text-align: center; font-weight:bold;";>FSSAI</p></div>
+            <div class="col-6 col-md-3"><a href="images/certificates/gst.jpg" target="_blank"><img src="images/certificates/gst.jpg" class="img-fluid"></a><p style="text-align: center; font-weight:bold;";>GST</p></div>
+            <div class="col-6 col-md-3"><a href="images/certificates/iec.jpg" target="_blank"><img src="images/certificates/iec.jpg" class="img-fluid"></a><p style="text-align: center; font-weight:bold;";>IEC</p></div>
+            <div class="col-6 col-md-3"><a href="images/certificates/msme.jpg" target="_blank"><img src="images/certificates/msme.jpg" class="img-fluid"></a><p style="text-align: center; font-weight:bold;";>MSME</p></div>
+        </div>
+    </div>
+</section>
 <div class="my-5">&nbsp;</div>
 <div class="my-5">&nbsp;</div>
 
