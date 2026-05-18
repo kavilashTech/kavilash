@@ -24,14 +24,25 @@ body {
     font-size: 14px
 }
 
+.navbar {
+    background-color: rgb(255, 255, 255)!important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .navbar-brand {
     font-size: 28px;
     font-weight: 700;
     color: var(--primary) !important
 }
+.navbar-brand img{
+    width:65px;
+}
 
 .navbar nav {
     --bs-nav-link-padding-x: 41px;
+}
+
+.navbar-nav .nav-item{
+    padding-left: 25px;
 }
 
 #top-nav-bar .nav-item a {
@@ -45,7 +56,7 @@ body {
     padding:1px 1px;
 }
 .navbar-nav>li>.dropdown-menu {
-    background-color: #dadada;
+    background-color: #fff;
 }
 
 #top-nav-bar .nav-item :hover {
@@ -55,10 +66,23 @@ body {
     transition-duration: 0.5s;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
+.navbar-nav .nav-item .nav-link:hover {
+    font-weight: 500;
+    border-radius: 4px;
+    background-color:  var(--primary);
+    color:#fff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
 .dropdown-item {
     display: block;
-    width: 90%;
     padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
     clear: both;
     font-weight: 400;
@@ -71,7 +95,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: rgb(43, 43, 41);
+    background-color: var(--primary);
     color:rgb(255, 255, 255);
 }
 
@@ -80,6 +104,7 @@ body {
 }
 
 .hero-carousel img {
+    margin-top: 10px;
     height: 65vh;
     object-fit: cover
         /* object-fit: contain; */

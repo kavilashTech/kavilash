@@ -24,23 +24,73 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W969H3GWV7"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-W969H3GWV7');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W969H3GWV7');
 </script>
 
 <body>
 
-    <div class="top-bar py-2">
-        <div class="container d-flex justify-content-between">
-            <div>📞 +91 7708960727 | ✉️ contact@kavilash.com</div>
-            <div>Global Exports from India</div>
+    <div class="section sticky-top">
+        <div class="top-bar py-2">
+            <div class="container d-flex justify-content-between">
+                <div>📞 +91 7708960727 | ✉️ contact@kavilash.com</div>
+                <div>Global Exports from India</div>
+            </div>
         </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="home.php">
+                    <img src="images/logo/klogo.png" alt="">
+                    <span>KAVILASH Enterprises</span>
+                    <!-- <h1 class="text-primary display-6">MILARIO</h1> -->
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.php" class="nav-item nav-link active">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.php" class="nav-item nav-link">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ready to Eat</a></li>
+                                <li><a class="dropdown-item" href="#">Ready to Cook</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Other Products</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="404.php" class="nav-item nav-link">B2B</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.php" class="nav-item nav-link">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recipe.php" class="nav-item nav-link">Recipes</a></li>
+
+                    </ul>
+                </div>
+                <div class="d-flex m-3 me-0">
+                    <a href="#" class="my-auto">
+                        <i class="fas fa-user fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+
+
+    <!-- <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.php"><img src="images/fav-icon/kfavicon.png" width="30px">&nbsp;KAVILASH ENTERPRISES</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -65,7 +115,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 
 
