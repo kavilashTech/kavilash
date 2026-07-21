@@ -1,89 +1,97 @@
-<?php include 'includes/header.php'; ?><section class='py-5'>
-    <div class='container'>
-        <h1>About Kavilash Enterprises</h1>
-        <p>
-            <span class="highlight">Kavilash Enterprises</span> is a professionally managed
-            <strong>merchant exporter from India</strong>, delivering premium agro, sustainable, and lifestyle products
-            to global markets. We are committed to quality assurance, ethical sourcing, regulatory compliance,
-            and long-term international trade partnerships.
-        </p>
-        <p>
-            With a strong sourcing network and export expertise, we serve distributors, wholesalers,
-            private label brands, and importers across multiple countries.
-        </p>
+<?php
 
-        <div class="section">
-            <h2>Millet & Plant-Based Food Exports</h2>
-            <p>
-                We specialize in exporting <strong>millet-based food products</strong> and
-                <strong>plant-based vegan foods</strong>, supporting the global demand for healthy,
-                gluten-free, and sustainable nutrition.
-            </p>
-            <ul>
-                <li>Millet Grains & Millet Flour</li>
-                <li>Millet Pasta & Noodles</li>
-                <li>Millet Flakes, Muesli & Granola</li>
-                <li>Millet Snacks & Ready-to-Cook Products</li>
-            </ul>
-            <p>
-                Our products are processed under hygienic conditions and packed in export-compliant formats
-                to meet international food safety standards.
-            </p>
-        </div>
+include "includes/header.php";
 
-        <div class="section">
-            <h2>Cow Dung-Based Sustainable Products</h2>
-            <p>
-                As part of our commitment to sustainability, we export eco-friendly
-                <strong>cow dung powder</strong>, <strong>cow dung compost</strong>, and
-                <strong>cow dung-based compressed briquettes</strong>.
-            </p>
-            <ul>
-                <li>Organic farming inputs</li>
-                <li>Soil enrichment compost</li>
-                <li>Compressed briquettes for furnace & barbeque use</li>
-            </ul>
-            <p>
-                Our briquettes offer longer burn duration and consistent heat output compared to
-                conventional briquettes, making them ideal for industrial and hospitality applications.
-            </p>
-        </div>
+?>
 
-        <div class="section">
-            <h2>Premium Indian Hair Exports</h2>
-            <p>
-                We export ethically sourced <strong>Indian Remy Hair</strong> and value-added hair products
-                to global beauty and fashion markets.
-            </p>
-            <ul>
-                <li>Indian Remy Hair</li>
-                <li>Wefted Hair</li>
-                <li>Hair Bundles</li>
-                <li>Hair Patches & Custom Extensions</li>
-            </ul>
-            <p>
-                Our hair products are known for natural texture, durability, and superior quality standards.
-            </p>
-        </div>
 
-        <div class="section">
-            <h2>Why Partner With Us</h2>
-            <ul>
-                <li>Trusted Merchant Exporter from India</li>
-                <li>Strong Supplier & Quality Control Network</li>
-                <li>Export Documentation & Compliance Expertise</li>
-                <li>Timely Global Shipments</li>
-                <li>Transparent & Long-Term Trade Relationships</li>
-            </ul>
-        </div>
+			<!-- 
+			=============================================
+				CallOut Banner 
+			============================================== 
+			-->
+			<div class="callout-banner no-bg">
+				<div class="container clearfix">
+					<h3 class="title">Sourcing From India</h3>
+					<p>We can source any products in Agricultural, Herbal, Dried Fruits & Vegetables, Cattle Feed, Imitation Jewellery, Garments and many other. Transparent and dedicated service team for sourcing prducts from India.</p>
+					<a href="contact.php" class="theme-button-one">CONTACT US</a>
+				</div>
+			</div> <!-- /.callout-banner -->
+			
+			
+			
+			<!-- 
+			=============================================
+				About Company Stye Two
+			============================================== 
+			-->
+			<div class="about-compnay-two no-bg section-spacing">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-12 text order-lg-last">
+								<div class="theme-title-one">
+									<h2>ABOUT US</h2>
+								</div> <!-- /.theme-title-one -->
+								<p>With a collective experience of around 16 years in exports and imports and around two decades of experience in international business on IT related projects, we understand the world and the modus operandi.</p>
+								<p>With our own farms and many farms in contract, the quality of the products are controlled using time tested processes.</p>
+								<p>The product selection, vendor selection and logistics are handled by professionals thus ensuring highest quality and shortest time possible.</p>
+								<p>We undertake complete Manufacturing of food products from duly accredited facilities with GMP, WHO, ISO and USFDA certifications.</p>
+								<p>Try us once, and we know you will never let us go!</p>
+								<!-- <img src="images/signature-black.svg" alt="" class="sign"> -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-6 col-12 order-lg-first">
+								<img src="images/about/about.jpg" alt="" class="left-img">
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.about-compnay-two -->
 
-        <div class="section">
-            <h2>Our Vision</h2>
-            <p>
-                To position premium Indian millet foods, sustainable cow dung-based products,
-                and high-quality Indian hair on the global stage — delivering excellence,
-                integrity, and reliability in every shipment.
-            </p>
-        </div>
-    </div>
-</section><?php include 'includes/footer.php'; ?>
+
+			<!--
+			=====================================================
+				Why We Best
+			=====================================================
+			-->
+			<div class="why-we-best">
+				<div class="overlay">
+					<div class="container">
+						<div class="theme-title-one">
+							<h2>WE PROVIDE THE BEST SERVICES</h2>
+							<p>With the best people and qualified professionals, anything that goes our of our company is put through strict quality processes.</p>
+						</div> <!-- /.theme-title-one -->
+
+						<div class="wrapper row no-gutters">
+							<div class="col-lg-6 col-12 order-lg-last"><div class="img-box"></div></div>
+							<div class="col-lg-6 col-12 order-lg-first">
+								<ul class="best-list-item">
+									<li>
+										<img src="images/icon/data-report.svg" class="icon">
+										<h5><a href="#">Best Strategy</a></h5>
+										<p>Farming on Contract and sourcing from all over India, lets you to focus on your business with peace of mind!</p>
+									</li>
+									<li>
+										<img src="images/icon/commissions.svg" class="icon">
+										<h5><a href="#">High-Quality Services</a></h5>
+										<p>Adherence to Process and Quality checks, we ensure the best products are delivered.</p>
+									</li>
+									<li>
+										<img src="images/icon/customer-service.svg" class="icon">
+										<h5><a href="#">Friendly Support</a></h5>
+										<p>Our Team is highly trained to handle situations and of course people. You will love interacting with our team.</p>
+									</li>
+								</ul>
+							</div> <!-- /.col- -->
+						</div> <!-- /.wrapper -->
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.why-we-best -->
+
+
+
+<?php
+
+include "includes/footer.php";
+
+?>
